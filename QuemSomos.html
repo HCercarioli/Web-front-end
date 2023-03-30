@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito fácil!">
+  <title>CERCARIOLI - Baby e Kids</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBARD4yZ3Bm_FdA7_9YSxzbHLnMfw5ojLY&callback=initMap"></script>
+</head>
+
+<body>
+  <div class="container">  
+  <header class="cabecalho" >
+    <div class="d-none">
+      <div id="barra_acessibilidade" class="col"></div>
+      <ul id="atalhos">
+          <li><a href="#QuemSomos" accesskey="1">Ir para Quem Somos [1]</a></li>
+          <li><a href="#LocalizaçãoLoja" accesskey="2">Ir para Lozalização da loja. [2]</a></li>
+      </ul>   
+  </div>
+    <div class="row">
+    <img class="cabecalho-imagem" class="col" src="Logo.jpeg" alt="Logo da empresa">
+    <div class="col d-flex align-items-center">
+    <ol class="cabecalho-menu">
+      <li><a href="Home.html" class="cabecalho-menu-item">Home</a></li>
+      <li><a href="Feminino.html" class="cabecalho-menu-item">Feminino</a></li>
+      <li><a href="Masculino.html" class="cabecalho-menu-item">Masculino</a></li>
+      <li><a href="QuemSomos.html" class="cabecalho-menu-item">Quem Somos</a></li>
+    </ol>
+  </header>
+
+  <main class="container">
+    <div class="row">
+    <section>
+      <h1 class="conteudo-principal-escrito-titulo" class="col">CERCARIOLI</h1>
+        <p class="conteudo-principal-paragrafo" class="col">Bem-vindo à nossa loja de roupa infantil! Aqui você encontrará peças de alta qualidade e conforto para crianças de todas as idades, 
+          desde recém-nascidos até adolescentes. Nossa coleção inclui roupas para diversas ocasiões, desde roupas de banho até roupas para festas. 
+          Além disso, nossos produtos são cuidadosamente selecionados para garantir a durabilidade e segurança para a pele sensível das crianças. 
+          Venha nos visitar e confira nossas novidades!</p>
+      <img class="conteudo-principal-imagem" src="gato.jpeg" alt="Imagem do gato.">
+</div>
+    </section>
+
+
+    <section class="conteudo-secundario">
+      
+  </section>
+
+
+  
+  <div id="map-container">
+    <h2>Localização da loja</h2>
+</div>
+<style> #map-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #00D2DB;
+  }
+</style>  
+
+<div id="map" 
+style="width: 250px; 
+       height: 250px;
+       margin: auto;"></div>
+
+    
+<script type="text/javascript">
+    function initMap() {
+    var lat = -22.11585713587588;
+    var lng = -51.407069559630294;
+    var uluru = new google.maps.LatLng(lat, lng);
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+    </section>
+  </main>
+
+
+
+  <footer class="rodape">
+    <img class="rodape-imagem" src="CERCARIOLI.png" alt="Logomarca da empresa escrito CERCARIOLI de forma colorida.">
+    <p>copyright 2023</p>
+  </footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <noscript>Atualize seu navegador</noscript>
+</body>
+</html>
